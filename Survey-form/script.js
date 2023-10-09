@@ -63,11 +63,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("resultRecommend").textContent = recommend[0].value;
         document.getElementById("resultSatisfied").textContent = satisfied[0].value;
         
-
-
-        
-
-
         // Show the popup
         popup.style.display = "block";
     });

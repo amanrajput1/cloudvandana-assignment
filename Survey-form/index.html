@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+    <link href="style.css" rel="stylesheet" >
+</head>
+<body>
+    <h1 >Survey Form</h1>
+    <form id="surveyForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="China">China</option>
+            <option value="India">India</option>
+            
+        </select><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <label class="option"> Is this first time, You are using our product & service?</label>
+        <input class="mBottom " id="productyes" type="radio" name="product" value="Yes">
+        <label  class="mBottom" for="yes">Yes</label>
+        <input class="mBottom" id="productno" type="radio"  name="product" value="No">
+        <label  class="mBottom" for="no">No</label>
+        <br><br>
+        
+        <label class="option"> Would you suggest your friends?</label>
+        <input class="mBottom " type="radio" id="recommendyes" name="recommend" value="Yes">
+        <label  class="mBottom"  for="yes">Yes</label>
+        <input class="mBottom " type="radio" id="recommendno" name="recommend" value="No">
+        <label  class="mBottom" for="no">No</label>
+        <br><br>
+
+        <label class="option"> How satisfied are you with company?</label>
+        <input class="mBottom " type="radio" id="satisfiedyes" name="satisfied" value="Yes">
+        <label class="mBottom" for="yes">Yes</label>
+        <input class="mBottom" type="radio" id="satisfiedno" name="satisfied" value="No">
+        <label  class="mBottom" for="no">No</label>
+        <br><br>
+
+
+        <button type="button" id="submitBtn">Submit</button>
+        <button type="reset" id="resetBtn">Reset</button>
+    </form>
+
+    <div id="popup" style="display: none;">
+        <h2 class="heading">Survey Results</h2>
+        <p class="popup-content"><strong>First Name:</strong> <span id="resultFirstName"></span></p>
+        <p class="popup-content"><strong>Last Name:</strong> <span id="resultLastName"></span></p>
+        <p class="popup-content"><strong>Date of Birth:</strong> <span id="resultDob"></span></p>
+        <p class="popup-content"><strong>Country:</strong> <span id="resultCountry"></span></p>
+        <p class="popup-content"><strong>Gender:</strong> <span id="resultGender"></span></p>
+        <p class="popup-content"><strong>Profession:</strong> <span id="resultProfession"></span></p>
+        <p class="popup-content"><strong>Email:</strong> <span id="resultEmail"></span></p>
+        <p class="popup-content"><strong>Mobile Number:</strong> <span id="resultMobile"></span></p>
+        <p class="popup-content"><strong> Is this first time, You are using our product & service?</strong> <span id="resultProduct"></span></p>
+        <p class="popup-content"><strong>Would you suggest your friends?</strong> <span id="resultRecommend"></span></p>
+        <p class="popup-content"><strong>How satisfied are you with company?</strong> <span id="resultSatisfied"></span></p>
+        <button id="closePopup">Close</button>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
